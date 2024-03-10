@@ -1,0 +1,7 @@
+Our model will recommend movie on the basis of tags, as it is CONTENT-BASED recommendation system.
+
+We need to concate the name strings together,
+why?
+
+for eg: if we have two person with the same name- 'Sam Markus' and 'Sam Verbinski', one is the director of movie 'M1' and another is an actor of movie 'M2'
+and I want to see the movie of Sam Markus but our model will also recommend the movie of Sam Verbinski, so to fix it we are trying to create a tag without space as to identify uniquely -> 1) SamMarkus 2) SamVerbinski
