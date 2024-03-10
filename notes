@@ -30,5 +30,15 @@ There are various techniques Text-vectorization :
 
             word1 = future, word2 = action
             count in tag of movie1 how many times these word appeared, this data of how many times these 5000 words occured in the tag of all the movies are the "VECTORS".
-            
-              
+
+Not considering the Stop Words, as they dont add meaning to the sentence but are used for formation of sentence
+
+We can do it manually, but can be hectic to count, remove stop words and for VECTORS, so we use scikit library's class
+COUNT VECTORIZER
+
+in count vectorizer there are various methods and one of them is get_feature_names()
+and here we can see all those 5000 words that occured most of the times in alphabetical order
+
+There's a possibility of seeing multiple words that has same meaning but are in the corpus(corpus is the dataset of this 5000 words obtain) like: Action , Actions & Ability, Abilities these both are same i need to bring a mechanism to consider it as one word so that it does not bring redundancy in the corpus
+
+Stemming is the technique that bring the actual meaning of the word.
