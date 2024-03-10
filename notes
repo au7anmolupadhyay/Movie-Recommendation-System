@@ -1,13 +1,13 @@
-Our model will recommend movie on the basis of tags, as it is CONTENT-BASED recommendation system.
+                    Our model will recommend movie on the basis of tags, as it is CONTENT-BASED recommendation system.
 
-We need to concate the name strings together,
+We need to concate the name strings together, (in the "CREW","CAST","KEYWORDS" column)
 why?
 
 for eg: if we have two person with the same name- 'Sam Markus' and 'Sam Verbinski', one is the director of movie 'M1' and another is an actor of movie 'M2'
 and I want to see the movie of Sam Markus but our model will also recommend the movie of Sam Verbinski, so to fix it we are trying to create a tag without space as to identify uniquely -> 1) SamMarkus 2) SamVerbinski
 
 
-After creating tags, our data cleaning or say preprocessing has been done 
+                            After creating tags, our data cleaning or say preprocessing has been done 
 
 now its time for "TEXT-VECTORIZATION"
 
@@ -15,3 +15,20 @@ There are various techniques Text-vectorization :
 1) Bag of words
 2) tfidf        (Term Frequency-Inverse Document Frequency)
 3) Words2Vec
+
+
+                                            For our model we are using "BAG OF WORDS"
+
+            What is bag of words technique?
+            ->  here we take all the words in all the tags of our dataset and join them, and find the most occured words(except STOP WORDS)
+
+            for eg: 5000 words that occur most of the time,
+
+                Tag1 + Tag2 + Tag3 + .... + Tag5000;
+
+            then find the number of times all those words occur in every movie's tag
+
+            word1 = future, word2 = action
+            count in tag of movie1 how many times these word appeared, this data of how many times these 5000 words occured in the tag of all the movies are the "VECTORS".
+            
+              
