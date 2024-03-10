@@ -42,3 +42,4 @@ and here we can see all those 5000 words that occured most of the times in alpha
 There's a possibility of seeing multiple words that has same meaning but are in the corpus(corpus is the dataset of this 5000 words obtain) like: Action , Actions & Ability, Abilities these both are same i need to bring a mechanism to consider it as one word so that it does not bring redundancy in the corpus
 
 Stemming is the technique that bring the actual meaning of the word.
+"Porter Stemmer"
